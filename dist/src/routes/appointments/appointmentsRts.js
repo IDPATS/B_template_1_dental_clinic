@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const scheduleAptCtrl_1 = require("../../controllers/appointmetns/scheduleAptCtrl");
+const getAllAptCtrl_1 = require("../../controllers/appointmetns/getAllAptCtrl");
+const cancelAptCtrl_1 = require("../../controllers/appointmetns/cancelAptCtrl");
+const getAllAptsCtrl_1 = require("../../controllers/appointmetns/getAllAptsCtrl");
+const appointmentsRouter = (0, express_1.Router)();
+appointmentsRouter.post("/schedule", scheduleAptCtrl_1.scheduleAptCtrl);
+appointmentsRouter.put("/cancel", cancelAptCtrl_1.cancelAptCtrl);
+appointmentsRouter.get("/userapts", getAllAptCtrl_1.getAllAptCtrl);
+appointmentsRouter.get("/lyst", getAllAptsCtrl_1.getAllAptsCtrl);
+exports.default = appointmentsRouter;
