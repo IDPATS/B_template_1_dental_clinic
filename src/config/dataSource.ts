@@ -10,7 +10,7 @@ export const AppDataSource = new DataSource({
     host: "dpg-coitk8ol5elc73ddi2m0-a",
     port: 5432,
     username: "idpats",
-    password: DBpassword,
+    password: "zc2EZr2l7rQNWph7IZUwCGz1Zfdfj3vy",
     database: "template_dental_clinic",
     synchronize: true,
     logging: true,

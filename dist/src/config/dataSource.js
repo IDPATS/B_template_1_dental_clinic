@@ -5,13 +5,12 @@ const typeorm_1 = require("typeorm");
 const ECredentials_1 = require("../entities/credentials/ECredentials");
 const EUser_1 = require("../entities/users/EUser");
 const EApt_1 = require("../entities/appointments/EApt");
-const envs_1 = require("./envs");
 exports.AppDataSource = new typeorm_1.DataSource({
     type: "postgres",
     host: "dpg-coitk8ol5elc73ddi2m0-a",
     port: 5432,
     username: "idpats",
-    password: envs_1.DBpassword,
+    password: "zc2EZr2l7rQNWph7IZUwCGz1Zfdfj3vy",
     database: "template_dental_clinic",
     synchronize: true,
     logging: true,
