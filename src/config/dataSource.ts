@@ -2,18 +2,19 @@ import { DataSource } from "typeorm";
 import { ECredential } from "../entities/credentials/ECredentials";
 import { EUser } from "../entities/users/EUser";
 import { EApt } from "../entities/appointments/EApt";
+import { DBpassword } from "./envs";
 
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host: "localhost",
+    host: "dpg-coitk8ol5elc73ddi2m0-a",
     port: 5432,
-    username: "postgres",
-    password: "1026387",
-    database: "typeorm",
+    username: "idpats",
+    password: DBpassword,
+    database: "template_dental_clinic",
     synchronize: true,
     logging: true,
-    dropSchema:true,
+    // dropSchema:true,
     entities: [ECredential,EUser,EApt],
     subscribers: [],
     migrations: [],
